@@ -1,0 +1,10 @@
+﻿{
+    "name": "jp.co.digitalwill.howler",
+    "version": "1.0.0",
+    "displayName": "Howler for Unity",
+    "description": "A wrapper for the howler.js library to use in Unity WebGL builds.",
+    "unity": "2018.3",
+    "documentationUrl": "https://github.com/Digital-Will-Inc/unity-howler",
+    "changelogUrl": "https://github.com/Digital-Will-Inc/unity-howler/blob/master/CHANGELOG.md",
+    "author": "Digital Will Inc"
+}
