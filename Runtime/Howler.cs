@@ -122,8 +122,8 @@ namespace HowlerUnity
         [MonoPInvokeCallback(typeof(Action))]
         private static void InitializationCallback()
         {
-            OnInitialized?.Invoke();
             IsInitialized = true;
+            OnInitialized?.Invoke();
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿{
     "name": "jp.co.digitalwill.howler",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "displayName": "Howler for Unity",
     "description": "A wrapper for the howler.js library to use in Unity WebGL builds.",
     "unity": "2018.3",
