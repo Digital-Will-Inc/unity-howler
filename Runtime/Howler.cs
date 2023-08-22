@@ -101,7 +101,9 @@ namespace HowlerUnity
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
         private static void InitializeHowler()
         {
+#if UNITY_WEBGL && !UNITY_EDITOR
             InitializeHowlerJS(InitializationCallback);
+#endif
         }
 
         [DllImport("__Internal")]

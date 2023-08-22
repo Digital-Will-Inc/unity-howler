@@ -1,5 +1,9 @@
 ﻿# Changelog
 
+## [1.0.2] - 2023-08-22
+### Fixed
+- InitializeHowler is no longer called in the editor
+
 ## [1.0.1] - 2023-08-22
 ### Fixed
 - Fixed a bug where the `Howler.OnInitialized` event would fire but `Howler.IsInitialized` would still be false.
