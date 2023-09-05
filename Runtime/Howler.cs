@@ -98,6 +98,21 @@ namespace HowlerUnity
             return GetVolumeJS();
         }
 
+        /// <summary>
+        /// Stops all audio clips. This will immediately stop all audio clips, unload them from the cache and
+        /// destroy them to free up memory.
+        /// </summary>
+        public static void StopAll()
+        {
+            if (!IsInitialized)
+            {
+                Debug.LogWarning("[Howler] has not been initialized. Check IsInitialized or listen to the OnInitialized event.");
+                return;
+            }
+
+            StopAllJS();
+        }
+
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
         private static void InitializeHowler()
         {
@@ -120,6 +135,9 @@ namespace HowlerUnity
 
         [DllImport("__Internal")]
         private static extern float GetVolumeJS();
+
+        [DllImport("__Internal")]
+        private static extern void StopAllJS();
 
         [MonoPInvokeCallback(typeof(Action))]
         private static void InitializationCallback()
