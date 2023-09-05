@@ -1,5 +1,12 @@
 ﻿# Changelog
 
+## [1.0.3] - 2023-09-05
+### Added
+- StopAll method to stop all sounds and unload them from memory
+
+### Fixed
+- Sounds are now garbage collected after finishing or being stopped
+
 ## [1.0.2] - 2023-08-22
 ### Fixed
 - InitializeHowler is no longer called in the editor
