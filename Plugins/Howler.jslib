@@ -21,6 +21,16 @@
             volume: payload.volume || 1.0,
         });
 
+        sound.on("end", () => {
+            if (sound.loop === false) {
+                sound.unload();
+            }
+        });
+
+        sound.on("stop", () => {
+            sound.unload();
+        });
+
         sound.play();
     },
 
@@ -34,6 +44,10 @@
 
     GetVolumeJS: function () {
         return Howler.volume();
+    },
+
+    StopAllJS: function () {
+        Howler.unload();
     }
 
 });
