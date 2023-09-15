@@ -1,5 +1,9 @@
 ﻿# Changelog
 
+## [1.0.4] - 2023-09-15
+### Fixed
+- Payload options not being applied
+
 ## [1.0.3] - 2023-09-05
 ### Added
 - StopAll method to stop all sounds and unload them from memory
