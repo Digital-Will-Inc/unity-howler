@@ -1,6 +1,7 @@
 using System;
 using System.Runtime.InteropServices;
 using AOT;
+using Newtonsoft.Json;
 using UnityEngine;
 
 namespace HowlerUnity
@@ -50,7 +51,7 @@ namespace HowlerUnity
                 return;
             }
 
-            PlayJS(clipName, format.ToString().ToLower(), JsonUtility.ToJson(options));
+            PlayJS(clipName, format.ToString().ToLower(), JsonConvert.SerializeObject(options));
         }
 
         /// <summary>
