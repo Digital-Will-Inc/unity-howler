@@ -1,5 +1,9 @@
 ﻿# Changelog
 
+## [1.0.5] - 2023-09-15
+### Changed
+- Use Newtonsoft.Json instead of Unity's JsonUtility
+
 ## [1.0.4] - 2023-09-15
 ### Fixed
 - Payload options not being applied
